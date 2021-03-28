@@ -24,8 +24,8 @@ router.get('/:id', async(req, res) =>{
 router.post('/', async(req, res) => {
     const alien = new Alien({
         name: req.body.name,
-        tech: req.body.tech,
-        sub: req.body.sub
+        email: req.body.email,
+        password: req.body.password
     });
     try{
         const z1 = await alien.save();

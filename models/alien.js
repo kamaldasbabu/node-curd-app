@@ -5,15 +5,15 @@ const alienSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    tech: {
+    email: {
         type: String,
         required: true
     },
-    sub: {
-        type: Boolean,
+    password: {
+        type: String,
         required: true,
-        default: false
+        default: "2345"
     }
 });
 
-module.exports = mongoose.model('Alien', alienSchema);
+module.exports = mongoose.model('User', alienSchema);
